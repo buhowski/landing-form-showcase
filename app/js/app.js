@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const email = document.getElementById('email').value;
         const siteUrl = window.location.href;
 
-        const formattedMessage = `<b>Message from site ${siteUrl}:</b>\n<b>Name:</b> <i>${name}</i>\n<b>Phone:</b> <i>${phone}</i>\n<b>Email:</b> <i>${email}</i>`;
+        const formattedMessage = `<b>Message from site ${siteUrl}:</b>\n <b>Name:</b> <i>${name}</i> \n <b>Phone:</b><i>${phone}</i>\n<b>Email:</b> <i>${email}</i>`;
 
-        const token = '6772419107:AAGo6vvV1-HFbFaYR2hsFuvOsyo6F3CizEY';
+        const telegramBotToken = '6772419107:AAFx6HTGfPaIqJgDVNOQktDNR3ASoJZcqdU';
         const chatId = '@LeadFormData';
-        const url = `https://api.telegram.org/bot${token}/sendMessage`;
+        const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
 
 		submitBtn.disabled = true;
         submitBtn.textContent = 'Sending...';
